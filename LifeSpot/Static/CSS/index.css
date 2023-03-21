@@ -28,7 +28,8 @@ footer {
     bottom: 0;
     font-size: medium;
     color: dimgrey;
-    line-height: 66%
+    line-height: 66%;
+    padding-left: 1%;
 }
 
 .navbar {
@@ -56,4 +57,14 @@ body {
 /* Комбинированный селектор - применяется ко всем элементам */
 header, footer, aside, body, .navbar, .video-container {
     font-family: "Helvetica 65 Medium", sans-serif;
+}
+
+#searchBarTop{
+    margin-bottom: 20px;
+}
+
+
+#searchBarTop:focus{
+    background-color:yellow;
+    border: solid 3px aqua;
 }
