@@ -6,6 +6,23 @@
     <!--Подключение стилей по относительному пути из внешнего файла-->
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../Static/JS/index.js" charset="utf-8"></script>
+    <!-- Внутренний скрипт с вызовами функций -->
+    <script>
+        // обработка сессии
+        handleSession(logger, checker /* Коллбек-функции */);
+
+        // функция для получения пользовательского ввода
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+        /*
+        * Всплывающее окно будет показано по таймауту
+        *
+        * */
+        /*setTimeout(() =>
+            alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
+            30000);*/
+    </script>
 </head>
 <body>
     <header id="header-index">
@@ -54,28 +71,6 @@
     <iframe src="http://www.yandex.ru/" name="myframe" width="500" height="600">Не грузится пораша</iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/xmdOZo-Tf10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31588.926500130223!2d25.096667899999996!3d60.34102759999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sfi!4v1678455132299!5m2!1sru!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-    <!-- Внутренний скрипт с вызовами функций -->
-    <script>
-        // Проверка на возраст
-        //checkAge();
 
-        // сохранение сессии
-        handleSession()
-
-        // вывод данных сессии в консоль
-        sessionLog();
-
-        // функция для получения пользовательского ввода
-        const inputParseFunction = function () {
-            return document.getElementsByTagName('input')[0].value.toLowerCase();
-        }
-        /*
-        * Всплывающее окно будет показано по таймауту
-        *
-        * */
-        setTimeout(() =>
-            alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
-            30000);
-    </script>
 </body>
     </html>

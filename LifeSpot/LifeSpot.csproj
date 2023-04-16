@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Static\JS\" />
+      <Folder Include="Static\IMG\" />
     </ItemGroup>
 
 </Project>
